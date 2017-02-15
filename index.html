@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<meta charset="utf-8">
+	<title>Demo</title>
+	<meta name="description" content="Demostration">
+	<meta name="author" content="Jorge Atempa">
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body ng-controller="MainCtrl">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 id="encabezado">Beers Catalog</h2>
+				<hr />
+			</div>
+		</div>
+		<div class="row">
+			<beers-catalog></beers-catalog>
+		</div>
+		<h5>By Jorge Atempa / @atempa09 </h5>
+	</div>
+	<!-- JS -->
+	<script src="js/lib/angular.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers/MainCtrl.js"></script>
+	<script src="js/services/BeerService.js"></script>
+	<script src="js/directives/BeersCatalog.js"></script>
+</body>
+</html>
