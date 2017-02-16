@@ -1,0 +1,10 @@
+<div ng-repeat="beer in beers | orderBy:'name'">
+	<h1>
+		{{ beer.name }}
+	</h1>
+
+ 	<img class="botellas" ng-src="{{beer.image_url}}"/>
+	<h4>{{ "Category: " + beer.category }}</h4>
+	<h4>{{ "ABV: " + beer.abv }}</h4>
+	<h4>{{ "Type: " + beer.type }}</h4>	
+</div>
